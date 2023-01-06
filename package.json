@@ -1,0 +1,28 @@
+{
+  "name": "quantagraph",
+  "description": "A Quantagraph is a data structure for storing and evaluating relationships between values and functions.",
+  "version": "0.1.0",
+  "author": "Chandler Freeman (https://github.com/thespychief)",
+  "license": "MIT",
+  "keywords": [
+    "quantagraph",
+    "dag",
+    "directed acyclic graph",
+    "spreadsheet"
+  ],
+  "main": "src/index",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "test": "jest -i"
+  },
+  "devDependencies": {
+    "eslint": "7.23.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "26.1.5",
+    "jest": "28.1.0"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  }
+}
