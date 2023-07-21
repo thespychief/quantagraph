@@ -1,7 +1,7 @@
 {
   "name": "quantagraph",
   "description": "A Quantagraph is a data structure for storing and evaluating relationships between values and functions.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Chandler Freeman (https://github.com/thespychief)",
   "license": "MIT",
   "keywords": [
