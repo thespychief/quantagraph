@@ -1,6 +1,9 @@
+/* eslint-disable no-eval */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-mixed-operators */
 /* eslint-disable no-bitwise */
+
+const math = require('mathjs');
 
 const generateId = () => 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
   .replace(/[xy]/g, (c) => {
@@ -28,7 +31,7 @@ const addNodesToGraph = ({ quantagraph, nodes }) => {
     });
 
     graph[id] = {
-      inputs, value: (inputs.length > 0 ? node.value : (x) => x),
+      inputs, value: (inputs.length > 0 ? node.value : '(x) => x'),
     };
   });
 
@@ -46,7 +49,7 @@ const deepEvaluteNode = (quantagraph, values, id) => {
   const inputValues = node.inputs.map(
     (inputId) => deepEvaluteNode(quantagraph, values, inputId),
   );
-  return node.value(...inputValues);
+  return (eval(node.value))(...inputValues);
 };
 
 module.exports = {

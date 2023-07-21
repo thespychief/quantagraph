@@ -11,7 +11,7 @@ const pythagorean = [
   {
     id: 'c',
     inputs: ['a', 'b'],
-    value: (a, b) => Math.sqrt((a ** 2) + (b ** 2)),
+    value: '(a, b) => Math.sqrt((a ** 2) + (b ** 2))',
   },
 ];
 
@@ -22,12 +22,12 @@ const cube = [
   {
     id: 'v',
     inputs: ['x', 'y', 'z'],
-    value: (x, y, z) => x * y * z,
+    value: '(x, y, z) => x * y * z',
   },
   {
     id: 'sa',
     inputs: ['x', 'y', 'z'],
-    value: (x, y, z) => 2 * (x * y + x * z + y * z),
+    value: '(x, y, z) => 2 * (x * y + x * z + y * z)',
   },
 ];
 
@@ -41,7 +41,7 @@ const materialObject = [
   {
     id: 'm',
     inputs: ['v', 'd'],
-    value: (v, d) => v * d,
+    value: '(v, d) => v * d',
   },
 ];
 
